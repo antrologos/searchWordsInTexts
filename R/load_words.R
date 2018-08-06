@@ -5,6 +5,8 @@ load_words <- function(path_to_excel_list){
         words <- as.matrix(words) %>% as.character()
         words <- words[!(words=="?")]
 
+        words <- words[!is.na(words)]
+
         most_probable_encoding <- rvest::guess_encoding(x = words)[1, 1]
         Encoding(words)        <- most_probable_encoding
         words <- iconv(words,
