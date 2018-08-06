@@ -1,0 +1,16 @@
+Package: searchWordsInTexts
+Title: A tiny little mini package for finding a list of words in a text data.frame
+Version: 0.0.0.9000
+Authors@R: person("Rogério", "Barbosa", email = "rogerio.barbosa@ipea.gov.br", role = c("aut", "cre"))
+Description: A tiny little mini package for finding a list of words in a text data.frame.
+Depends: 
+        R (>= 3.4.4),
+        purrr,
+        readxl,
+        rvest,
+        tibble
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/antrologos/searchWordsInTexts/issues
+RoxygenNote: 6.0.1
